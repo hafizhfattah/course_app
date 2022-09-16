@@ -4,6 +4,7 @@ import 'package:flutter/cupertino.dart';
 const Color black = CupertinoColors.black;
 const Color white = CupertinoColors.white;
 const Color grey = CupertinoColors.systemGrey;
+const Color red = CupertinoColors.systemRed;
 
 //RGBO Colors
 const Color blue = Color.fromRGBO(53, 139, 191, 1);

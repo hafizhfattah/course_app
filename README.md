@@ -43,6 +43,18 @@ dependencies:
     title="Main Screen"
     style="display: inline-block; margin: 0 auto; width: 200; height: 400px">
 
+<img
+    src="/assets/image4.png"
+    alt="Main Screen"
+    title="Main Screen"
+    style="display: inline-block; margin: 0 auto; width: 200; height: 400px">
+
+<img
+    src="/assets/image5.png"
+    alt="Main Screen"
+    title="Main Screen"
+    style="display: inline-block; margin: 0 auto; width: 200; height: 400px">
+
     
     
 
