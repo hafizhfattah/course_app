@@ -6,6 +6,7 @@ Made With Flutter
 ### 📄 **Page Include**
 - Verify OTP Code Page
 - Home Page
+- Course Detail Page
 
 ### 🎖  **Installing**
 ```
