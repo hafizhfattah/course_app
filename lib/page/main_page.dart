@@ -260,133 +260,6 @@ class MainPage extends StatelessWidget {
                     scrollDirection: Axis.horizontal,
                     child: Row(
                       children: [
-                        GestureDetector(
-                          onTap: () {
-                            Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) => const DetailCourse()),
-                            );
-                          },
-                          child: Container(
-                            height: 330.0,
-                            width: 320,
-                            decoration: const BoxDecoration(
-                              color: white,
-                              borderRadius: BorderRadius.all(
-                                Radius.circular(
-                                  16.0,
-                                ),
-                              ),
-                            ),
-                            child: Column(
-                              children: [
-                                Stack(
-                                  children: [
-                                    ClipRRect(
-                                      borderRadius: const BorderRadius.only(
-                                        topLeft: Radius.circular(12.0),
-                                        topRight: Radius.circular(12.0),
-                                      ),
-                                      child: Image.network(
-                                        'https://media.istockphoto.com/vectors/swimming-vector-id1132462233?b=1&k=20&m=1132462233&s=612x612&w=0&h=2Xy5K1dGWtjvciEZlBQmGUQ25DA6xk5no6cv5OLsYqQ=',
-                                        height: 220.0,
-                                        width: double.maxFinite,
-                                        fit: BoxFit.cover,
-                                      ),
-                                    ),
-                                    Padding(
-                                      padding: const EdgeInsets.only(
-                                        left: 20,
-                                        top: 160.0,
-                                      ),
-                                      child: Container(
-                                        height: 40,
-                                        width: 110,
-                                        alignment: Alignment.center,
-                                        decoration: const BoxDecoration(
-                                          color: white,
-                                          borderRadius: BorderRadius.all(
-                                            Radius.circular(
-                                              16.0,
-                                            ),
-                                          ),
-                                        ),
-                                        child: Text(
-                                          "36 Video",
-                                          style: GoogleFonts.montserrat(
-                                            color: black,
-                                            fontSize: 16,
-                                            letterSpacing: 1,
-                                            fontWeight: FontWeight.bold,
-                                          ),
-                                        ),
-                                      ),
-                                    ),
-                                  ],
-                                ),
-                                const SizedBox(
-                                  height: 5.0,
-                                ),
-                                Padding(
-                                  padding: const EdgeInsets.all(10),
-                                  child: Column(
-                                    crossAxisAlignment:
-                                        CrossAxisAlignment.start,
-                                    children: [
-                                      Text(
-                                        "Swimming Course",
-                                        style: GoogleFonts.montserrat(
-                                          color: black,
-                                          fontSize: 20,
-                                          letterSpacing: 1,
-                                          fontWeight: FontWeight.bold,
-                                        ),
-                                      ),
-                                      const SizedBox(
-                                        height: 16.0,
-                                      ),
-                                      Row(
-                                        children: [
-                                          const CircleAvatar(
-                                            radius: 16,
-                                            backgroundImage: NetworkImage(
-                                                'https://picsum.photos/1000'),
-                                          ),
-                                          const SizedBox(
-                                            width: 10.0,
-                                          ),
-                                          Text(
-                                            "John Doe",
-                                            style: GoogleFonts.montserrat(
-                                              color: black,
-                                              fontSize: 18,
-                                              letterSpacing: 1,
-                                              fontWeight: FontWeight.w500,
-                                            ),
-                                          ),
-                                          const Spacer(),
-                                          Text(
-                                            "\$ 100 ",
-                                            style: GoogleFonts.montserrat(
-                                              color: black,
-                                              fontSize: 18,
-                                              letterSpacing: 1,
-                                              fontWeight: FontWeight.w500,
-                                            ),
-                                          ),
-                                        ],
-                                      ),
-                                    ],
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ),
-                        ),
-                        const SizedBox(
-                          width: 16.0,
-                        ),
                         Container(
                           height: 330.0,
                           width: 320,
@@ -616,6 +489,133 @@ class MainPage extends StatelessWidget {
                                 ),
                               ),
                             ],
+                          ),
+                        ),
+                        const SizedBox(
+                          height: 16.0,
+                        ),
+                        GestureDetector(
+                          onTap: () {
+                            Navigator.push(
+                              context,
+                              MaterialPageRoute(
+                                  builder: (context) => const DetailCourse()),
+                            );
+                          },
+                          child: Container(
+                            height: 330.0,
+                            width: 320,
+                            decoration: const BoxDecoration(
+                              color: white,
+                              borderRadius: BorderRadius.all(
+                                Radius.circular(
+                                  16.0,
+                                ),
+                              ),
+                            ),
+                            child: Column(
+                              children: [
+                                Stack(
+                                  children: [
+                                    ClipRRect(
+                                      borderRadius: const BorderRadius.only(
+                                        topLeft: Radius.circular(12.0),
+                                        topRight: Radius.circular(12.0),
+                                      ),
+                                      child: Image.network(
+                                        'https://media.istockphoto.com/vectors/swimming-vector-id1132462233?b=1&k=20&m=1132462233&s=612x612&w=0&h=2Xy5K1dGWtjvciEZlBQmGUQ25DA6xk5no6cv5OLsYqQ=',
+                                        height: 220.0,
+                                        width: double.maxFinite,
+                                        fit: BoxFit.cover,
+                                      ),
+                                    ),
+                                    Padding(
+                                      padding: const EdgeInsets.only(
+                                        left: 20,
+                                        top: 160.0,
+                                      ),
+                                      child: Container(
+                                        height: 40,
+                                        width: 110,
+                                        alignment: Alignment.center,
+                                        decoration: const BoxDecoration(
+                                          color: white,
+                                          borderRadius: BorderRadius.all(
+                                            Radius.circular(
+                                              16.0,
+                                            ),
+                                          ),
+                                        ),
+                                        child: Text(
+                                          "36 Video",
+                                          style: GoogleFonts.montserrat(
+                                            color: black,
+                                            fontSize: 16,
+                                            letterSpacing: 1,
+                                            fontWeight: FontWeight.bold,
+                                          ),
+                                        ),
+                                      ),
+                                    ),
+                                  ],
+                                ),
+                                const SizedBox(
+                                  height: 5.0,
+                                ),
+                                Padding(
+                                  padding: const EdgeInsets.all(10),
+                                  child: Column(
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.start,
+                                    children: [
+                                      Text(
+                                        "Swimming Course",
+                                        style: GoogleFonts.montserrat(
+                                          color: black,
+                                          fontSize: 20,
+                                          letterSpacing: 1,
+                                          fontWeight: FontWeight.bold,
+                                        ),
+                                      ),
+                                      const SizedBox(
+                                        height: 16.0,
+                                      ),
+                                      Row(
+                                        children: [
+                                          const CircleAvatar(
+                                            radius: 16,
+                                            backgroundImage: NetworkImage(
+                                                'https://picsum.photos/1000'),
+                                          ),
+                                          const SizedBox(
+                                            width: 10.0,
+                                          ),
+                                          Text(
+                                            "John Doe",
+                                            style: GoogleFonts.montserrat(
+                                              color: black,
+                                              fontSize: 18,
+                                              letterSpacing: 1,
+                                              fontWeight: FontWeight.w500,
+                                            ),
+                                          ),
+                                          const Spacer(),
+                                          Text(
+                                            "\$ 100 ",
+                                            style: GoogleFonts.montserrat(
+                                              color: black,
+                                              fontSize: 18,
+                                              letterSpacing: 1,
+                                              fontWeight: FontWeight.w500,
+                                            ),
+                                          ),
+                                        ],
+                                      ),
+                                    ],
+                                  ),
+                                ),
+                              ],
+                            ),
                           ),
                         ),
                       ],
