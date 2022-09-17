@@ -82,6 +82,7 @@ class MainPage extends StatelessWidget {
                     child: Center(
                       child: Expanded(
                           child: TextFormField(
+                        keyboardType: TextInputType.name,
                         cursorColor: Colors.grey[400],
                         style: GoogleFonts.montserrat(
                           color: Colors.grey[400],
@@ -131,6 +132,7 @@ class MainPage extends StatelessWidget {
                             children: [
                               const CircleAvatar(
                                 radius: 33,
+                                backgroundColor: scaffoldbg,
                                 backgroundImage: NetworkImage(
                                   "https://img.freepik.com/free-vector/designer-girl-concept-illustration_114360-4455.jpg?w=2000",
                                 ),
@@ -168,6 +170,7 @@ class MainPage extends StatelessWidget {
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: [
                               const CircleAvatar(
+                                backgroundColor: scaffoldbg,
                                 radius: 33,
                                 backgroundImage: NetworkImage(
                                   "https://img.freepik.com/free-vector/illustrated-business-person-meditating_52683-60757.jpg?w=2000",
@@ -207,6 +210,7 @@ class MainPage extends StatelessWidget {
                             children: [
                               const CircleAvatar(
                                 radius: 33,
+                                backgroundColor: scaffoldbg,
                                 backgroundImage: NetworkImage(
                                   "https://img.freepik.com/free-vector/cooking-concept-illustration_114360-1396.jpg?w=2000",
                                 ),
@@ -492,7 +496,7 @@ class MainPage extends StatelessWidget {
                           ),
                         ),
                         const SizedBox(
-                          height: 16.0,
+                          width: 16.0,
                         ),
                         GestureDetector(
                           onTap: () {

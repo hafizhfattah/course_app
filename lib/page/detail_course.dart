@@ -86,10 +86,10 @@ class DetailCourse extends StatelessWidget {
                     ],
                   ),
                   const Spacer(),
-                  CircleAvatar(
-                    radius: 25,
-                    backgroundColor: Colors.grey[200],
-                    child: const Icon(CupertinoIcons.heart_fill, color: red),
+                  const Icon(
+                    CupertinoIcons.heart_fill,
+                    color: red,
+                    size: 25,
                   ),
                 ],
               ),
