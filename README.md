@@ -1,6 +1,6 @@
 ### 📦 **Course AppUI**
 
-Slicing Simple UI OF Course App
+Slicing Simple UI Of Course App
 Made With Flutter
 
 ### 📄 **Page Include**
@@ -27,7 +27,7 @@ dependencies:
 ### 📷 **Screenshots**
 
 <img
-    src="/assets/image1.png"
+    src="/assets/image9.png"
     alt="Main Screen"
     title="Main Screen"
     style="display: inline-block; margin: 0 auto; width: 200; height: 400px">
