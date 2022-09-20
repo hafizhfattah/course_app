@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:learning_app_ui/page/main_page.dart';
 
@@ -55,123 +56,124 @@ class OtpPage extends StatelessWidget {
                 const SizedBox(
                   height: 30.0,
                 ),
-                Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                  children: [
-                    SizedBox(
-                      width: 50,
-                      height: 100,
-                      child: Center(
-                        child: TextField(
-                          style: GoogleFonts.montserrat(
-                            fontSize: 20,
-                            color: black,
-                            letterSpacing: 1,
-                            fontWeight: FontWeight.bold,
-                          ),
-                          keyboardType: TextInputType.number,
-                          maxLength: 1,
-                          maxLines: 1,
-                          decoration: InputDecoration(
-                              enabledBorder: OutlineInputBorder(
-                                borderSide:
-                                    const BorderSide(width: 1, color: grey),
-                                borderRadius: BorderRadius.circular(6),
-                              ),
-                              focusedBorder: OutlineInputBorder(
-                                borderSide:
-                                    const BorderSide(width: 1, color: blue),
-                                borderRadius: BorderRadius.circular(6),
-                              )),
-                        ),
-                      ),
-                    ),
-                    SizedBox(
-                      width: 50,
-                      height: 100,
-                      child: Center(
-                        child: TextField(
-                          style: GoogleFonts.montserrat(
-                            fontSize: 20,
-                            color: black,
-                            letterSpacing: 1,
-                            fontWeight: FontWeight.bold,
-                          ),
-                          keyboardType: TextInputType.number,
-                          maxLength: 1,
-                          maxLines: 1,
-                          decoration: InputDecoration(
-                              enabledBorder: OutlineInputBorder(
-                                borderSide:
-                                    const BorderSide(width: 1, color: grey),
-                                borderRadius: BorderRadius.circular(6),
-                              ),
-                              focusedBorder: OutlineInputBorder(
-                                borderSide:
-                                    const BorderSide(width: 1, color: blue),
-                                borderRadius: BorderRadius.circular(6),
-                              )),
-                        ),
-                      ),
-                    ),
-                    SizedBox(
-                      width: 50,
-                      height: 100,
-                      child: Center(
-                        child: TextField(
-                          style: GoogleFonts.montserrat(
-                            fontSize: 20,
-                            color: black,
-                            letterSpacing: 1,
-                            fontWeight: FontWeight.bold,
-                          ),
-                          keyboardType: TextInputType.number,
-                          maxLength: 1,
-                          maxLines: 1,
-                          decoration: InputDecoration(
-                              enabledBorder: OutlineInputBorder(
-                                borderSide:
-                                    const BorderSide(width: 1, color: grey),
-                                borderRadius: BorderRadius.circular(6),
-                              ),
-                              focusedBorder: OutlineInputBorder(
-                                borderSide:
-                                    const BorderSide(width: 1, color: blue),
-                                borderRadius: BorderRadius.circular(6),
-                              )),
-                        ),
-                      ),
-                    ),
-                    SizedBox(
-                      width: 50,
-                      height: 100,
-                      child: Center(
-                        child: TextField(
-                          style: GoogleFonts.montserrat(
-                            fontSize: 20,
-                            color: black,
-                            letterSpacing: 1,
-                            fontWeight: FontWeight.bold,
-                          ),
-                          keyboardType: TextInputType.number,
-                          maxLength: 1,
-                          maxLines: 1,
-                          decoration: InputDecoration(
-                              enabledBorder: OutlineInputBorder(
-                                borderSide:
-                                    const BorderSide(width: 1, color: grey),
-                                borderRadius: BorderRadius.circular(6),
-                              ),
-                              focusedBorder: OutlineInputBorder(
-                                borderSide:
-                                    const BorderSide(width: 1, color: blue),
-                                borderRadius: BorderRadius.circular(6),
-                              )),
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
+                const Otp(),
+                // Row(
+                //   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                //   children: [
+                //     SizedBox(
+                //       width: 50,
+                //       height: 100,
+                //       child: Center(
+                //         child: TextField(
+                //           style: GoogleFonts.montserrat(
+                //             fontSize: 20,
+                //             color: black,
+                //             letterSpacing: 1,
+                //             fontWeight: FontWeight.bold,
+                //           ),
+                //           keyboardType: TextInputType.number,
+                //           maxLength: 1,
+                //           maxLines: 1,
+                //           decoration: InputDecoration(
+                //               enabledBorder: OutlineInputBorder(
+                //                 borderSide:
+                //                     const BorderSide(width: 1, color: grey),
+                //                 borderRadius: BorderRadius.circular(6),
+                //               ),
+                //               focusedBorder: OutlineInputBorder(
+                //                 borderSide:
+                //                     const BorderSide(width: 1, color: blue),
+                //                 borderRadius: BorderRadius.circular(6),
+                //               )),
+                //         ),
+                //       ),
+                //     ),
+                //     SizedBox(
+                //       width: 50,
+                //       height: 100,
+                //       child: Center(
+                //         child: TextField(
+                //           style: GoogleFonts.montserrat(
+                //             fontSize: 20,
+                //             color: black,
+                //             letterSpacing: 1,
+                //             fontWeight: FontWeight.bold,
+                //           ),
+                //           keyboardType: TextInputType.number,
+                //           maxLength: 1,
+                //           maxLines: 1,
+                //           decoration: InputDecoration(
+                //               enabledBorder: OutlineInputBorder(
+                //                 borderSide:
+                //                     const BorderSide(width: 1, color: grey),
+                //                 borderRadius: BorderRadius.circular(6),
+                //               ),
+                //               focusedBorder: OutlineInputBorder(
+                //                 borderSide:
+                //                     const BorderSide(width: 1, color: blue),
+                //                 borderRadius: BorderRadius.circular(6),
+                //               )),
+                //         ),
+                //       ),
+                //     ),
+                //     SizedBox(
+                //       width: 50,
+                //       height: 100,
+                //       child: Center(
+                //         child: TextField(
+                // style: GoogleFonts.montserrat(
+                //   fontSize: 20,
+                //   color: black,
+                //   letterSpacing: 1,
+                //   fontWeight: FontWeight.bold,
+                // ),
+                //           keyboardType: TextInputType.number,
+                //           maxLength: 1,
+                //           maxLines: 1,
+                //           decoration: InputDecoration(
+                //               enabledBorder: OutlineInputBorder(
+                //                 borderSide:
+                //                     const BorderSide(width: 1, color: grey),
+                //                 borderRadius: BorderRadius.circular(6),
+                //               ),
+                //               focusedBorder: OutlineInputBorder(
+                //                 borderSide:
+                //                     const BorderSide(width: 1, color: blue),
+                //                 borderRadius: BorderRadius.circular(6),
+                //               )),
+                //         ),
+                //       ),
+                //     ),
+                //     SizedBox(
+                //       width: 50,
+                //       height: 100,
+                //       child: Center(
+                //         child: TextField(
+                //           style: GoogleFonts.montserrat(
+                //             fontSize: 20,
+                //             color: black,
+                //             letterSpacing: 1,
+                //             fontWeight: FontWeight.bold,
+                //           ),
+                //           keyboardType: TextInputType.number,
+                //           maxLength: 1,
+                //           maxLines: 1,
+                // decoration: InputDecoration(
+                //     enabledBorder: OutlineInputBorder(
+                //       borderSide:
+                //           const BorderSide(width: 1, color: grey),
+                //       borderRadius: BorderRadius.circular(6),
+                //     ),
+                //     focusedBorder: OutlineInputBorder(
+                //       borderSide:
+                //           const BorderSide(width: 1, color: blue),
+                //       borderRadius: BorderRadius.circular(6),
+                //     )),
+                //         ),
+                //       ),
+                //     ),
+                //   ],
+                // ),
                 const SizedBox(
                   height: 20.0,
                 ),
@@ -238,6 +240,114 @@ class OtpPage extends StatelessWidget {
           ),
         ),
       ),
+    );
+  }
+}
+
+/// Otp
+class Otp extends StatelessWidget {
+  const Otp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    var size = MediaQuery.of(context).size;
+    return SizedBox(
+      width: size.width,
+      height: size.height * 0.1,
+      child: Form(
+          child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        children: [
+          SizedBox(
+            width: 65,
+            height: 65,
+            child: TextFormField(
+              onChanged: (value) {
+                if (value.length == 1) {
+                  FocusScope.of(context).nextFocus();
+                }
+              },
+              decoration: textFormFieldDecoration,
+              cursorColor: Colors.deepPurpleAccent,
+              textAlign: TextAlign.center,
+              cursorHeight: 30.0,
+              maxLines: 1,
+              style: font,
+              keyboardType: TextInputType.number,
+              inputFormatters: [
+                LengthLimitingTextInputFormatter(1),
+                FilteringTextInputFormatter.digitsOnly
+              ],
+            ),
+          ),
+          SizedBox(
+            width: 65,
+            height: 65,
+            child: TextFormField(
+              onChanged: (value) {
+                if (value.length == 1) {
+                  FocusScope.of(context).nextFocus();
+                }
+              },
+              decoration: textFormFieldDecoration,
+              cursorColor: Colors.deepPurpleAccent,
+              textAlign: TextAlign.center,
+              cursorHeight: 30.0,
+              maxLines: 1,
+              style: font,
+              keyboardType: TextInputType.number,
+              inputFormatters: [
+                LengthLimitingTextInputFormatter(1),
+                FilteringTextInputFormatter.digitsOnly
+              ],
+            ),
+          ),
+          SizedBox(
+            width: 65,
+            height: 65,
+            child: TextFormField(
+              onChanged: (value) {
+                if (value.length == 1) {
+                  FocusScope.of(context).nextFocus();
+                }
+              },
+              decoration: textFormFieldDecoration,
+              cursorColor: Colors.deepPurpleAccent,
+              textAlign: TextAlign.center,
+              cursorHeight: 30.0,
+              maxLines: 1,
+              style: font,
+              keyboardType: TextInputType.number,
+              inputFormatters: [
+                LengthLimitingTextInputFormatter(1),
+                FilteringTextInputFormatter.digitsOnly
+              ],
+            ),
+          ),
+          SizedBox(
+            width: 65,
+            height: 65,
+            child: TextFormField(
+              onChanged: (value) {
+                if (value.length == 1) {
+                  FocusManager.instance.primaryFocus?.unfocus();
+                }
+              },
+              decoration: textFormFieldDecoration,
+              cursorColor: Colors.deepPurpleAccent,
+              textAlign: TextAlign.center,
+              cursorHeight: 30.0,
+              maxLines: 1,
+              style: font,
+              keyboardType: TextInputType.number,
+              inputFormatters: [
+                LengthLimitingTextInputFormatter(1),
+                FilteringTextInputFormatter.digitsOnly
+              ],
+            ),
+          ),
+        ],
+      )),
     );
   }
 }

@@ -1,6 +1,6 @@
 ### 📦 **Course AppUI**
 
-Slicing StaycationApp From Figma Of My Team
+Slicing Simple UI OF Course App
 Made With Flutter
 
 ### 📄 **Page Include**
