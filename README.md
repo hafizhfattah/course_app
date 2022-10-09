@@ -1,6 +1,6 @@
 ### 📦 **Course App**
 
-Super Course App With Beautiful Fiture & UI
+Super Course App With Beautiful Fiture & UI.
 
 ### 📄 **Page Include**
 - Verify OTP Code Page
