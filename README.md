@@ -1,7 +1,6 @@
-### 📦 **Course AppUI**
+### 📦 **Course App**
 
-Slicing Simple UI Of Course App
-Made With Flutter
+Super Course App With Beautiful Fiture & UI
 
 ### 📄 **Page Include**
 - Verify OTP Code Page
