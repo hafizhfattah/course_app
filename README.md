@@ -27,12 +27,6 @@ dependencies:
 ### 📷 **Screenshots**
 
 <img
-    src="/assets/image9.png"
-    alt="Main Screen"
-    title="Main Screen"
-    style="display: inline-block; margin: 0 auto; width: 200; height: 400px">
-
-<img
     src="/assets/image2.png"
     alt="Main Screen"
     title="Main Screen"
